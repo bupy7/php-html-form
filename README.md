@@ -363,4 +363,4 @@ $ composer test:run
 License
 -------
 
-php-html-form is released under the [MIT License](LICENSE).
+php-html-form is released under the [MIT License](LICENSE.md).
