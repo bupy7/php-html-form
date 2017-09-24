@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\DateTimeLocal;
 
-class DateTimeLocalTest extends PHPUnit_Framework_TestCase
+class DateTimeLocalTest extends TestCase
 {
     use InputContractTest;
 

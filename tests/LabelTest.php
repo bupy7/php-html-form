@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\Label;
 
-class LabelTest extends PHPUnit_Framework_TestCase
+class LabelTest extends TestCase
 {
     public function tearDown()
     {

@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\FormBuilder;
 
-class FormBuilderTest extends PHPUnit_Framework_TestCase
+class FormBuilderTest extends TestCase
 {
     public function setUp()
     {

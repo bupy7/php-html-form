@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\TextArea;
 
-class TextAreaTest extends PHPUnit_Framework_TestCase
+class TextAreaTest extends TestCase
 {
     use InputContractTest;
 

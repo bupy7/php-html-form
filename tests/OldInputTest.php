@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\FormBuilder;
 
-class OldInputTest extends PHPUnit_Framework_TestCase
+class OldInputTest extends TestCase
 {
     public function setUp()
     {

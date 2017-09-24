@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\Text;
 
-class TextTest extends PHPUnit_Framework_TestCase
+class TextTest extends TestCase
 {
     use TextSubclassContractTest;
 

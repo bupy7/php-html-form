@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\Password;
 
-class PasswordTest extends PHPUnit_Framework_TestCase
+class PasswordTest extends TestCase
 {
     use TextSubclassContractTest;
 

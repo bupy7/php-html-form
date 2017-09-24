@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\RadioButton;
 
-class RadioButtonTest extends PHPUnit_Framework_TestCase
+class RadioButtonTest extends TestCase
 {
     use InputContractTest;
 

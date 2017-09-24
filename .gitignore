@@ -1,6 +1,8 @@
 /vendor
 /build
-composer.phar
-composer.lock
+/composer.phar
+/composer.lock
 .DS_Store
-todo.md
+/logs
+/phpunit.xml.dist
+/.idea

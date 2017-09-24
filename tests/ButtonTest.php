@@ -2,11 +2,12 @@
 
 use AdamWathan\Form\Elements\Button;
 
-class ButtonTest extends PHPUnit_Framework_TestCase
+class ButtonTest extends TestCase
 {
     public function testButtonCanBeCreated()
     {
         $submit = new Button('Click Me', 'click-me');
+        $this->assertInstanceOf('AdamWathan\Form\Elements\Button', $submit);
     }
 
     public function testRenderBasicButton()

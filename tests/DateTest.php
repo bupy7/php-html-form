@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\Elements\Date;
 
-class DateTest extends PHPUnit_Framework_TestCase
+class DateTest extends TestCase
 {
     use InputContractTest;
 

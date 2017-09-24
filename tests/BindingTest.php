@@ -2,7 +2,7 @@
 
 use AdamWathan\Form\FormBuilder;
 
-class BindingTest extends PHPUnit_Framework_TestCase
+class BindingTest extends TestCase
 {
     public function setUp()
     {
