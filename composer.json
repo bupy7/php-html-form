@@ -1,5 +1,5 @@
 {
-    "name": "bupy7/form",
+    "name": "bupy7/php-html-form",
     "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
     "authors": [
         {
