@@ -2,7 +2,7 @@ Form
 ====
 
 This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is only HTML-elements builder
-without any support frameworks.
+without any support frameworks. Extension are supporting PHP from 5.4 to 7.x!
 
 
 [![Latest Stable Version](https://poser.pugx.org/bupy7/php-html-form/v/stable)](https://packagist.org/packages/bupy7/php-html-form)
@@ -344,3 +344,25 @@ $model->date_of_birth = new DateTime('1985-05-06');
 ```
 
 > Note: Be sure to `bind` before creating any other form elements.
+
+Run tests
+---------
+
+**Using Docker:**
+
+```bash
+$ docker-compose up -d
+$ docker-compose run php sh
+$ composer test:run
+```
+
+**Any another way:**
+
+```bash
+$ composer test:run
+```
+
+License
+-------
+
+php-html-form is released under the [MIT License](LICENSE).
