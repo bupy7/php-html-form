@@ -4,11 +4,19 @@ Form
 This is fork of [https://github.com/adamwathan/form](adamwathan/form). There is only HTML-elements builder
 without any support frameworks (including Laravel).
 
+
+[![Latest Stable Version](https://poser.pugx.org/bupy7/xml-constructor/v/stable)](https://packagist.org/packages/bupy7/form)
+[![Total Downloads](https://poser.pugx.org/bupy7/xml-constructor/downloads)](https://packagist.org/packages/bupy7/form)
+[![Latest Unstable Version](https://poser.pugx.org/bupy7/xml-constructor/v/unstable)](https://packagist.org/packages/bupy7/form)
+[![License](https://poser.pugx.org/bupy7/xml-constructor/license)](https://packagist.org/packages/bupy7/form)
+[![Build Status](https://travis-ci.org/bupy7/xml-constructor.svg?branch=master)](https://travis-ci.org/bupy7/form)
+[![Coverage Status](https://coveralls.io/repos/bupy7/xml-constructor/badge.svg?branch=master&service=github)](https://coveralls.io/github/bupy7/form?branch=master)
+
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
-- [Remembering Old Input](#remembering-old-input)
+- [Remembering Old Input [Deprecated]](#remembering-old-input)
 - [Error Messages](#error-messages)
 - [CSRF Protection](#csrf-protection)
 - [Data Binding](#data-binding)
