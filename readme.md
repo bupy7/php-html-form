@@ -27,7 +27,7 @@ Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully 
 You can install this package via Composer by running this command in your terminal in the root of your project:
 
 ```bash
-composer require bupy7/form
+composer require bupy7/php-html-form
 ```
 
 ### Laravel [Deprecated]
