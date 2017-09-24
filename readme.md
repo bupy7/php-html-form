@@ -1,11 +1,8 @@
-> **Important: This package is not actively maintained.** For bug fixes and new features, please fork.
-
 Form
-========
+====
 
-[![This Project Has Been Deprecated.](http://www.repostatus.org/badges/0.1.0/abandoned.svg)](http://www.repostatus.org/#abandoned)
-[![Code Climate](https://codeclimate.com/github/adamwathan/form/badges/gpa.svg)](https://codeclimate.com/github/adamwathan/form)
-[![Coverage Status](https://coveralls.io/repos/adamwathan/form/badge.svg?branch=master)](https://coveralls.io/r/adamwathan/form?branch=master)
+This is fork of [https://github.com/adamwathan/form](adamwathan/form). There is only HTML-elements builder
+without any support frameworks (including Laravel).
 
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
@@ -22,10 +19,10 @@ Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully 
 You can install this package via Composer by running this command in your terminal in the root of your project:
 
 ```bash
-composer require adamwathan/form
+composer require bupy7/form
 ```
 
-### Laravel
+### Laravel [Deprecated]
 
 > This package works great as a replacement Form Builder that was removed in Laravel 5. The API is different but all of the features are there.
 
@@ -302,7 +299,7 @@ $options = [
 ```
 
 <a href="#remembering-old-input"></a>
-## Remembering Old Input
+## Remembering Old Input [Deprecated]
 
 The FormBuilder can remember old input and prepopulate your form fields if you redirect back to the form because of a validation error.
 
@@ -360,7 +357,7 @@ Assuming you set a CSRF token when instantiating the Formbuilder (or you are usi
 ```
 
 <a href="#data-binding"></a>
-## Data Binding
+## Data Binding [Deprecated]
 
 Sometimes you might have a form where all of the fields match properties on some sort of object or array in your system, and you want the user to be able to edit that data. Data binding makes this really easy by allowing you to bind an object or array to your form that will be used to automatically provide all of the default values for your fields.
 

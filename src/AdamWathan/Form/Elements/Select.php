@@ -148,6 +148,12 @@ class Select extends FormControl
         }
         return null;
     }
+ 
+    public function prompt($label = '', $value = '')
+    {
+        $this->options = [$value => $label] + $this->options;
+        return $this;
+    }
 
     protected function renderOptAttributes($optValue)
     {
@@ -165,3 +171,4 @@ class Select extends FormControl
         }, $attributes, $values));
     }
 }
+

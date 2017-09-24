@@ -1,10 +1,14 @@
 {
-    "name": "adamwathan/form",
+    "name": "bupy7/form",
     "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
     "authors": [
         {
             "name": "Adam Wathan",
             "email": "adam.wathan@gmail.com"
+        },
+        {
+            "name": "Vasily Velosloodcev",
+            "email": "bupy765@gmail.com"
         }
     ],
     "license": "MIT",
@@ -27,3 +31,4 @@
     },
     "minimum-stability": "dev"
 }
+

@@ -6,6 +6,9 @@ use AdamWathan\Form\ErrorStore\IlluminateErrorStore;
 use AdamWathan\Form\OldInput\IlluminateOldInputProvider;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * @deprecated
+ */
 class FormServiceProvider extends ServiceProvider
 {
     protected $defer = false;
@@ -48,3 +51,4 @@ class FormServiceProvider extends ServiceProvider
         return ['adamwathan.form'];
     }
 }
+

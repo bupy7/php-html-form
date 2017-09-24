@@ -4,6 +4,9 @@ namespace AdamWathan\Form\OldInput;
 
 use Illuminate\Session\Store as Session;
 
+/**
+ * @deprecated
+ */
 class IlluminateOldInputProvider implements OldInputInterface
 {
     private $session;

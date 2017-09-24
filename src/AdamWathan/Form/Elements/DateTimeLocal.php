@@ -1,7 +1,11 @@
 <?php
 
+
 namespace AdamWathan\Form\Elements;
 
+/**
+ * @deprecated
+ */ 
 class DateTimeLocal extends Text
 {
     protected $attributes = [

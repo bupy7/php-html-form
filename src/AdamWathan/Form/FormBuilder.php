@@ -29,7 +29,10 @@ class FormBuilder
     protected $csrfToken;
 
     protected $boundData;
-
+    
+    /**
+     * @deprecated
+     */ 
     public function setOldInputProvider(OldInputInterface $oldInputProvider)
     {
         $this->oldInput = $oldInputProvider;
@@ -79,6 +82,9 @@ class FormBuilder
         return $text;
     }
 
+    /**
+     * @deprecated
+     */
     public function date($name)
     {
         $date = new Date($name);
@@ -90,6 +96,9 @@ class FormBuilder
         return $date;
     }
 
+    /**
+     * @deprecated
+     */
     public function dateTimeLocal($name)
     {
         $date = new DateTimeLocal($name);
@@ -286,6 +295,9 @@ class FormBuilder
         $this->boundData = null;
     }
 
+    /**
+     * @deprecated
+     */
     public function selectMonth($name)
     {
         $options = [
@@ -306,3 +318,4 @@ class FormBuilder
         return $this->select($name, $options);
     }
 }
+

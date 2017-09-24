@@ -2,6 +2,9 @@
 
 namespace AdamWathan\Form\Elements;
 
+/**
+ * @deprecated
+ */
 class Date extends Text
 {
     protected $attributes = [
