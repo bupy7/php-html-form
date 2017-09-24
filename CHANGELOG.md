@@ -9,6 +9,19 @@ Form
 - *Dep*: Deprecated.
 - *Fix*: Fixed.
 
+1.0.0 [2017-09-24]
+-------------------
+
+- Rem: Elements\Date element.
+- Rem: Elements\DateTimeLocal element.
+- Rem: FormServiceProvider.
+- Rem: Facades\Form.
+- Rem: OldInput\IlluminateOldInputProvider.
+- Rem: FormBuilder::selectMonth(). 
+- Add: Code fixer.
+- Add: Docker.
+- Enh: Refactoring. 
+
 0.10.0 [2017-09-24]
 -------------------
 
@@ -20,4 +33,3 @@ Form
 - Dep: FormBuilder::selectMonth(). 
 - Add: Prompt for select.
 - Add: Custom attributes for option select. 
-

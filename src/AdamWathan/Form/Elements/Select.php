@@ -171,4 +171,3 @@ class Select extends FormControl
         }, $attributes, $values));
     }
 }
-

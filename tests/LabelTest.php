@@ -12,6 +12,7 @@ class LabelTest extends TestCase
     public function testLabelCanBeCreated()
     {
         $label = new Label('Email');
+        $this->assertInstanceOf('AdamWathan\Form\Elements\Label', $label);
     }
 
     public function testRenderBasicLabel()

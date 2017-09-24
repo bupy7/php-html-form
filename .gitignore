@@ -6,3 +6,4 @@
 /logs
 /phpunit.xml.dist
 /.idea
+/.php_cs.cache

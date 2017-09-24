@@ -4,6 +4,11 @@ use AdamWathan\Form\FormBuilder;
 
 class FormBuilderTest extends TestCase
 {
+    /**
+     * @var FormBuilder
+     */
+    protected $form;
+
     public function setUp()
     {
         $this->form = new FormBuilder;
@@ -17,6 +22,7 @@ class FormBuilderTest extends TestCase
     public function testFormBuilderCanBeCreated()
     {
         $formBuilder = new FormBuilder;
+        $this->assertInstanceOf('AdamWathan\Form\FormBuilder', $formBuilder);
     }
 
     public function testFormOpen()
@@ -249,28 +255,6 @@ class FormBuilderTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function testDate()
-    {
-        $expected = '<input type="date" name="date_of_birth">';
-        $result = (string) $this->form->date('date_of_birth');
-        $this->assertEquals($expected, $result);
-
-        $expected = '<input type="date" name="start_date">';
-        $result = (string) $this->form->date('start_date');
-        $this->assertEquals($expected, $result);
-    }
-
-    public function testDateTimeLocal()
-    {
-        $expected = '<input type="datetime-local" name="date_and_time_of_birth">';
-        $result = (string) $this->form->dateTimeLocal('date_and_time_of_birth');
-        $this->assertEquals($expected, $result);
-
-        $expected = '<input type="datetime-local" name="start_date_and_time">';
-        $result = (string) $this->form->dateTimeLocal('start_date_and_time');
-        $this->assertEquals($expected, $result);
-    }
-
     public function testEmail()
     {
         $expected = '<input type="email" name="email">';
@@ -285,6 +269,10 @@ class FormBuilderTest extends TestCase
     public function testCanSetCsrfToken()
     {
         $this->form->setToken('12345');
+        $refProp = new ReflectionProperty($this->form, 'csrfToken');
+        $refProp->setAccessible(true);
+        $this->assertEquals('12345', $refProp->getValue($this->form));
+        $refProp->setAccessible(false);
     }
 
     public function testCanRenderCsrfToken()
@@ -311,13 +299,6 @@ class FormBuilderTest extends TestCase
 
         $expected = '<form method="GET" action="">';
         $result = (string) $this->form->open()->get();
-        $this->assertEquals($expected, $result);
-    }
-
-    public function testSelectMonth()
-    {
-        $expected = '<select name="month"><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>';
-        $result = (string) $this->form->selectMonth('month');
         $this->assertEquals($expected, $result);
     }
 

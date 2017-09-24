@@ -371,4 +371,3 @@ class SelectTest extends TestCase
         $this->assertEquals($expected, $select->render());
     }
 }
-

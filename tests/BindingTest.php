@@ -4,6 +4,11 @@ use AdamWathan\Form\FormBuilder;
 
 class BindingTest extends TestCase
 {
+    /**
+     * @var FormBuilder
+     */
+    protected $form;
+
     public function setUp()
     {
         $this->form = new FormBuilder;
@@ -46,26 +51,6 @@ class BindingTest extends TestCase
 
         $expected = '<input type="text" name="number" value="0">';
         $result = (string) $this->form->text('number');
-        $this->assertEquals($expected, $result);
-    }
-
-    public function testBindDate()
-    {
-        $object = $this->getStubObject();
-        $this->form->bind($object);
-
-        $expected = '<input type="date" name="date_of_birth" value="1985-05-06">';
-        $result = (string) $this->form->date('date_of_birth');
-        $this->assertEquals($expected, $result);
-    }
-
-    public function testBindDateTimeLocal()
-    {
-        $object = $this->getStubObject();
-        $this->form->bind($object);
-
-        $expected = '<input type="datetime-local" name="date_and_time_of_birth" value="1985-05-06T16:39">';
-        $result = (string) $this->form->dateTimeLocal('date_and_time_of_birth');
         $this->assertEquals($expected, $result);
     }
 
@@ -377,21 +362,6 @@ class BindingTest extends TestCase
         $expected .= '<input type="radio" name="published[]" value="0">';
         $result  = (string) $this->form->radio('published[]', 1)->defaultToUnchecked();
         $result .= (string) $this->form->radio('published[]', 0);
-        $this->assertEquals($expected, $result);
-    }
-
-    public function testOldInputTakesPrecedenceOverBinding()
-    {
-        $oldInput = Mockery::mock('AdamWathan\Form\OldInput\OldInputInterface');
-        $oldInput->shouldReceive('hasOldInput')->andReturn(true);
-        $oldInput->shouldReceive('getOldInput')->with('first_name')->andReturn('Steve');
-        $this->form->setOldInputProvider($oldInput);
-
-        $object = $this->getStubObject();
-        $this->form->bind($object);
-
-        $expected = '<input type="text" name="first_name" value="Steve">';
-        $result = (string) $this->form->text('first_name');
         $this->assertEquals($expected, $result);
     }
 

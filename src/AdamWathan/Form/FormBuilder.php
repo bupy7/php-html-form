@@ -18,25 +18,14 @@ use AdamWathan\Form\Elements\Select;
 use AdamWathan\Form\Elements\Text;
 use AdamWathan\Form\Elements\TextArea;
 use AdamWathan\Form\ErrorStore\ErrorStoreInterface;
-use AdamWathan\Form\OldInput\OldInputInterface;
 
 class FormBuilder
 {
-    protected $oldInput;
-
     protected $errorStore;
 
     protected $csrfToken;
 
     protected $boundData;
-    
-    /**
-     * @deprecated
-     */ 
-    public function setOldInputProvider(OldInputInterface $oldInputProvider)
-    {
-        $this->oldInput = $oldInputProvider;
-    }
 
     public function setErrorStore(ErrorStoreInterface $errorStore)
     {
@@ -80,34 +69,6 @@ class FormBuilder
         }
 
         return $text;
-    }
-
-    /**
-     * @deprecated
-     */
-    public function date($name)
-    {
-        $date = new Date($name);
-
-        if (!is_null($value = $this->getValueFor($name))) {
-            $date->value($value);
-        }
-
-        return $date;
-    }
-
-    /**
-     * @deprecated
-     */
-    public function dateTimeLocal($name)
-    {
-        $date = new DateTimeLocal($name);
-
-        if (!is_null($value = $this->getValueFor($name))) {
-            $date->value($value);
-        }
-
-        return $date;
     }
 
     public function email($name)
@@ -255,29 +216,10 @@ class FormBuilder
 
     public function getValueFor($name)
     {
-        if ($this->hasOldInput()) {
-            return $this->getOldInput($name);
-        }
-
         if ($this->hasBoundData()) {
             return $this->getBoundValue($name, null);
         }
-
         return null;
-    }
-
-    protected function hasOldInput()
-    {
-        if (! isset($this->oldInput)) {
-            return false;
-        }
-
-        return $this->oldInput->hasOldInput();
-    }
-
-    protected function getOldInput($name)
-    {
-        return $this->oldInput->getOldInput($name);
     }
 
     protected function hasBoundData()
@@ -294,28 +236,4 @@ class FormBuilder
     {
         $this->boundData = null;
     }
-
-    /**
-     * @deprecated
-     */
-    public function selectMonth($name)
-    {
-        $options = [
-            "1" => "January",
-            "2" => "February",
-            "3" => "March",
-            "4" => "April",
-            "5" => "May",
-            "6" => "June",
-            "7" => "July",
-            "8" => "August",
-            "9" => "September",
-            "10" => "October",
-            "11" => "November",
-            "12" => "December",
-        ];
-
-        return $this->select($name, $options);
-    }
 }
-
