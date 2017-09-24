@@ -5,12 +5,12 @@ This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is 
 without any support frameworks (including Laravel).
 
 
-[![Latest Stable Version](https://poser.pugx.org/bupy7/xml-constructor/v/stable)](https://packagist.org/packages/bupy7/form)
-[![Total Downloads](https://poser.pugx.org/bupy7/xml-constructor/downloads)](https://packagist.org/packages/bupy7/form)
-[![Latest Unstable Version](https://poser.pugx.org/bupy7/xml-constructor/v/unstable)](https://packagist.org/packages/bupy7/form)
-[![License](https://poser.pugx.org/bupy7/xml-constructor/license)](https://packagist.org/packages/bupy7/form)
-[![Build Status](https://travis-ci.org/bupy7/xml-constructor.svg?branch=master)](https://travis-ci.org/bupy7/form)
-[![Coverage Status](https://coveralls.io/repos/bupy7/xml-constructor/badge.svg?branch=master&service=github)](https://coveralls.io/github/bupy7/form?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/bupy7/form/v/stable)](https://packagist.org/packages/bupy7/form)
+[![Total Downloads](https://poser.pugx.org/bupy7/form/downloads)](https://packagist.org/packages/bupy7/form)
+[![Latest Unstable Version](https://poser.pugx.org/bupy7/form/v/unstable)](https://packagist.org/packages/bupy7/form)
+[![License](https://poser.pugx.org/bupy7/form/license)](https://packagist.org/packages/bupy7/form)
+[![Build Status](https://travis-ci.org/bupy7/form.svg?branch=master)](https://travis-ci.org/bupy7/form)
+[![Coverage Status](https://coveralls.io/repos/bupy7/form/badge.svg?branch=master&service=github)](https://coveralls.io/github/bupy7/form?branch=master)
 
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
