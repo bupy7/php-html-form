@@ -332,14 +332,12 @@ default values for your fields.
 $model->first_name = "John";
 $model->last_name = "Doe";
 $model->email = "john@example.com";
-$model->date_of_birth = new DateTime('1985-05-06');
 
 <?= $builder->open(); ?>
 <?= $builder->bind($model); ?>
 <?= $builder->text('first_name'); ?>
 <?= $builder->text('last_name'); ?>
 <?= $builder->email('email'); ?>
-<?= $builder->date('date_of_birth'); ?>
 <?= $builder->close(); ?>
 ```
 
