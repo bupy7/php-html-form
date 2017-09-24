@@ -1,7 +1,7 @@
 Form
 ====
 
-This is fork of [https://github.com/adamwathan/form](adamwathan/form). There is only HTML-elements builder
+This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is only HTML-elements builder
 without any support frameworks (including Laravel).
 
 
