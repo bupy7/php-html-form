@@ -1,5 +1,7 @@
 language: php
+
 dist: trusty
+
 php:
   - '5.4'
   - '5.5'
@@ -9,6 +11,7 @@ php:
   - '7.2'
   - nightly
   - hhvm
+  
 matrix:
   allow_failures:
     - php: nightly
