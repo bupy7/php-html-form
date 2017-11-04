@@ -9,6 +9,11 @@ Form
 - *Dep*: Deprecated.
 - *Fix*: Fixed.
 
+1.0.1 [2017-11-04]
+------------------
+
+- Add: Tests for PHP 7.2 and nightly. (TangRufus)
+
 1.0.0 [2017-09-24]
 -------------------
 
