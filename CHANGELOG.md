@@ -1,5 +1,5 @@
-Form
-====
+php-html-form
+=============
 
 **Legend:**
 
@@ -14,6 +14,7 @@ Form
 
 - Rem: Supporting PHP 5.4 and 5.5.
 - Fix: Dependencies.
+- Add: Support PHP 7.3, 7.4.
 
 1.0.1 [2017-11-04]
 ------------------
