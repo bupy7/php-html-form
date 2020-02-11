@@ -9,6 +9,12 @@ Form
 - *Dep*: Deprecated.
 - *Fix*: Fixed.
 
+2.0.0 [2020-02-11]
+------------------
+
+- Rem: Supporting PHP 5.4 and 5.5.
+- Fix: Dependencies.
+
 1.0.1 [2017-11-04]
 ------------------
 

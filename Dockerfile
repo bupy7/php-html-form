@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.10
 
 RUN apk update
 
@@ -15,7 +15,8 @@ RUN apk add --no-cache php7 \
     php7-zlib \
     php7-dom \
     php7-posix \
-    php7-openssl
+    php7-openssl \
+    php7-simplexml
 
 RUN sed -ie 's/^;zend/zend/' /etc/php7/conf.d/xdebug.ini
 

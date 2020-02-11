@@ -2,7 +2,7 @@ Form
 ====
 
 This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is only HTML-elements builder
-without any support frameworks. Extension are supporting PHP from 5.4 to 7.x!
+without any support frameworks. Extension are supporting PHP from 5.6 to 7.x!
 
 
 [![Latest Stable Version](https://poser.pugx.org/bupy7/php-html-form/v/stable)](https://packagist.org/packages/bupy7/php-html-form)
@@ -350,7 +350,7 @@ Run tests
 
 ```bash
 $ docker-compose up -d
-$ docker-compose run php sh
+$ docker-compose exec php sh
 $ composer test:run
 ```
 
