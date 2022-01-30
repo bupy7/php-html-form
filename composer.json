@@ -28,6 +28,6 @@
     "classmap": ["tests/"]
   },
   "scripts": {
-    "cs:fix": "php-cs-fixer fix --config=./phpcs.php --verbose"
+    "cs:fix": "~/.composer/vendor/bin/php-cs-fixer fix --config=./phpcs.php --verbose"
   }
 }
