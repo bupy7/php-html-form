@@ -4,7 +4,7 @@ use AdamWathan\Form\Elements\Label;
 
 class LabelTest extends TestCase
 {
-    public function tearDown()
+    protected function _tearDown()
     {
         Mockery::close();
     }

@@ -1,16 +1,15 @@
-Form
-====
+php-html-form
+===
 
-This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is only HTML-elements builder
-without any support frameworks. Extension are supporting PHP from 5.6 to 7.x!
+This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is just HTML-elements builder
+without any framework support. Extension are supporting PHP from 5.6 to 8.x!
 
 
-[![Latest Stable Version](https://poser.pugx.org/bupy7/php-html-form/v/stable)](https://packagist.org/packages/bupy7/php-html-form)
+[![Stable Version](https://poser.pugx.org/bupy7/php-html-form/v/stable)](https://packagist.org/packages/bupy7/php-html-form)
+[![Build status](https://github.com/bupy7/php-html-form/actions/workflows/build.yml/badge.svg)](https://github.com/bupy7/php-html-form/actions/workflows/build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/bupy7/php-html-form/badge.svg?branch=master)](https://coveralls.io/github/bupy7/php-html-form?branch=master)
 [![Total Downloads](https://poser.pugx.org/bupy7/php-html-form/downloads)](https://packagist.org/packages/bupy7/php-html-form)
-[![Latest Unstable Version](https://poser.pugx.org/bupy7/php-html-form/v/unstable)](https://packagist.org/packages/bupy7/php-html-form)
 [![License](https://poser.pugx.org/bupy7/php-html-form/license)](https://packagist.org/packages/bupy7/php-html-form)
-[![Build Status](https://travis-ci.org/bupy7/php-html-form.svg?branch=master)](https://travis-ci.org/bupy7/php-html-form)
-[![Coverage Status](https://coveralls.io/repos/bupy7/php-html-form/badge.svg?branch=master&service=github)](https://coveralls.io/github/bupy7/php-html-form?branch=master)
 
 Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully intuitive syntax.
 
@@ -21,7 +20,7 @@ Boring name for a boring package. Builds form HTML with a fluent-ish, hopefully 
 - [Data Binding](#data-binding)
 
 Installation
-------------
+---
 
 You can install this package via Composer by running this command in your terminal in the root of your
 project:
@@ -31,7 +30,7 @@ $ composer require bupy7/php-html-form
 ```
 
 Basic Usage
------------
+---
 
 - [Getting Started](#getting-started)
 - [Opening a Form](#opening-a-form)
@@ -45,7 +44,7 @@ Basic Usage
 - [Setting Attributes](#setting-attributes)
 
 Getting Started
----------------
+---
 
 First, instantiate a FormBuilder...
 
@@ -64,7 +63,7 @@ Next, use the FormBuilder to build an element. For example:
 
 
 Opening a Form
---------------
+---
 
 ```php
 // <form method="POST">
@@ -92,7 +91,7 @@ Opening a Form
 ```
 
 Text and Password Fields
-------------------------
+---
 
 Text and password fields share the same interface.
 
@@ -119,7 +118,7 @@ Other available methods:
 - `enable()`
 
 Textareas
----------
+---
 
 Textareas share the same interface as regular text fields, with a couple of extra useful methods.
 
@@ -135,7 +134,7 @@ Textareas share the same interface as regular text fields, with a couple of extr
 ```
 
 Checkboxes and Radio Buttons
-----------------------------
+---
 
 ```php
 // <input type="checkbox" name="terms" value="1">
@@ -158,7 +157,7 @@ Checkboxes and Radio Buttons
 ```
 
 Selects
--------
+---
 
 ```php
 // <select name="birth_year"></select>
@@ -215,7 +214,7 @@ $options = [
 ```
 
 Buttons
--------
+---
 
 ```php
 // <button type="button">Click Me</button>
@@ -232,7 +231,7 @@ Buttons
 ```
 
 Hidden Inputs
--------------
+---
 
 ```php
 // <input type="hidden" name="secret" value="my-secret-value">
@@ -240,7 +239,7 @@ Hidden Inputs
 ```
 
 Labels
-------
+---
 
 **Basic Label**
 ```php
@@ -261,7 +260,7 @@ Labels
 ```
 
 Setting Attributes
-------------------
+---
 
 ```php
 // Attributes can be set with attribute(...)
@@ -282,7 +281,7 @@ Setting Attributes
 ```
 
 Error Messages
---------------
+---
 
 FormBuilder also allows you to easily retrieve error messages for your form elements. To do so, just
 implement the `ErrorStoreInterface` and pass it to the FormBuilder:
@@ -321,7 +320,7 @@ token to your form easily like so:
 ```
 
 Data Binding
-------------
+---
 
 Sometimes you might have a form where all of the fields match properties on some sort of object or array
 in your system, and you want the user to be able to edit that data. Data binding makes this really easy by
@@ -343,24 +342,24 @@ $model->email = "john@example.com";
 
 > Note: Be sure to `bind` before creating any other form elements.
 
-Run tests
----------
+Testing
+---
 
-**Using Docker:**
+Run tests:
 
-```bash
-$ docker-compose up -d
-$ docker-compose exec php sh
-$ composer test:run
+```
+$ ./vendor/bin/phpunit --no-coverage
 ```
 
-**Any another way:**
+Run tests with coverage:
 
-```bash
-$ composer test:run
 ```
+$ XDEBUG_MODE=coverage ./vendor/bin/phpunit
+```
+
+HTML coverage path: `build/coverage/index.html`
 
 License
--------
+---
 
 php-html-form is released under the [MIT License](LICENSE.md).

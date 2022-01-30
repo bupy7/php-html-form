@@ -6,4 +6,6 @@
 /logs
 /phpunit.xml.dist
 /.idea
-/.php_cs.cache
+/.php-cs-fixer.cache
+/docker-compose.yml
+/.phpunit.result.cache

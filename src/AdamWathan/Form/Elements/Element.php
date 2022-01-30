@@ -137,7 +137,7 @@ abstract class Element
 
     protected function escape($value)
     {
-        return htmlentities($value, ENT_QUOTES, 'UTF-8');
+        return htmlentities((string)$value, ENT_QUOTES, 'UTF-8');
     }
 
     public function __call($method, $params)

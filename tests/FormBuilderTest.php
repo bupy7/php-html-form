@@ -9,12 +9,12 @@ class FormBuilderTest extends TestCase
      */
     protected $form;
 
-    public function setUp()
+    protected function _setUp()
     {
         $this->form = new FormBuilder;
     }
 
-    public function tearDown()
+    protected function _tearDown()
     {
         Mockery::close();
     }
