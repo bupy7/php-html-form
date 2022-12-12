@@ -9,6 +9,13 @@ php-html-form
 - *Dep*: Deprecated.
 - *Fix*: Fixed.
 
+2.0.2 [2022-12-12]
+------------------
+
+- Add: Support of PHP 8.2.
+- Enh: Reduce size of package.
+- Fix: Small fixes.
+
 2.0.1 [2022-01-30]
 ------------------
 

@@ -5,8 +5,6 @@ namespace AdamWathan\Form;
 use AdamWathan\Form\Binding\BoundData;
 use AdamWathan\Form\Elements\Button;
 use AdamWathan\Form\Elements\Checkbox;
-use AdamWathan\Form\Elements\Date;
-use AdamWathan\Form\Elements\DateTimeLocal;
 use AdamWathan\Form\Elements\Email;
 use AdamWathan\Form\Elements\File;
 use AdamWathan\Form\Elements\FormOpen;

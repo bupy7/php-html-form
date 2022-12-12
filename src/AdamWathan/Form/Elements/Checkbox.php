@@ -89,7 +89,7 @@ class Checkbox extends Input
         $oldValue = array_map('strval', $oldValue);
 
         if (in_array($currentValue, $oldValue)) {
-            return $this->check();
+            $this->check();
         }
     }
 
