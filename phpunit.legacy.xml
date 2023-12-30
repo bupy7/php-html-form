@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
     bootstrap="./tests/bootstrap.php"
-    colors="true"
-    cacheDirectory=".phpunit.cache"
->
-  <coverage>
-    <report>
-      <clover outputFile="build/logs/clover.xml"/>
-      <html outputDirectory="build/coverage"/>
-    </report>
-  </coverage>
+    verbose="true"
+    colors="true">
 
   <testsuites>
     <testsuite name="PHP HTML Form">
@@ -22,12 +15,13 @@
       <exclude>tests/TextSubclassContractTest.php</exclude>
     </testsuite>
   </testsuites>
-
-  <logging/>
-
-  <source>
-    <include>
+  <filter>
+    <whitelist>
       <directory suffix=".php">src</directory>
-    </include>
-  </source>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-clover" target="build/logs/clover.xml"/>
+    <log type="coverage-html" target="build/coverage"/>
+  </logging>
 </phpunit>

@@ -2,7 +2,7 @@ The MIT License (MIT)
 
 Copyright (c) 2016 Adam Wathan <adam.wathan@gmail.com>
 
-Copyright (c) 2022 Vasily Belosloodcev <vasily.belosloodcev@gmail.com>
+Copyright (c) 2023 Vasily Belosloodcev <vasily.belosloodcev@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

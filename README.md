@@ -372,7 +372,7 @@ You have to install [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 don't use build-in Docker image:
 
 ```
-composer global require friendsofphp/php-cs-fixer "^3.13.0"
+composer global require friendsofphp/php-cs-fixer
 ```
 
 License

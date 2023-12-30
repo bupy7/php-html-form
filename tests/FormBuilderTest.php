@@ -114,7 +114,7 @@ class FormBuilderTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    public function buttonProvider()
+    public static function buttonProvider()
     {
         return [
             ['Click Me', 'click-me', '<button type="button" name="click-me">Click Me</button>'],

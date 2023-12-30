@@ -2,7 +2,7 @@
 
 /**
  * Configuration of code style fixer and checker for this library.
- * This configuration compatible with friendsofphp/php-cs-fixer "^3.13.0".
+ * This configuration compatible with friendsofphp/php-cs-fixer "^3.43.1".
  */
 
 use PhpCsFixer\Finder;

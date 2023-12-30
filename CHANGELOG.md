@@ -9,6 +9,11 @@ php-html-form
 - *Dep*: Deprecated.
 - *Fix*: Fixed.
 
+2.0.3 [2023-12-30]
+------------------
+
+- Add: Supporting of PHP 8.3.
+
 2.0.2 [2022-12-12]
 ------------------
 
