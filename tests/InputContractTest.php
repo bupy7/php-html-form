@@ -195,7 +195,7 @@ trait InputContractTest
         $text = $text->value('example@example.com');
 
         $result = $text->render();
-        $message ='value attribute should be set';
+        $message = 'value attribute should be set';
         $this->assertRegExp($this->elementRegExp('value="example@example.com"'), $result, $message);
 
         $text = $this->newTestSubjectInstance('first_name');

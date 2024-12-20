@@ -2,7 +2,7 @@
 
 /**
  * Configuration of code style fixer and checker for this library.
- * This configuration compatible with friendsofphp/php-cs-fixer "^3.43.1".
+ * This configuration compatible with friendsofphp/php-cs-fixer "^3.65.0".
  */
 
 use PhpCsFixer\Finder;
@@ -14,10 +14,8 @@ $finder = Finder::create()
 
 $config = new Config();
 $config->setRules([
-    '@PSR2' => true,
-    'array_syntax' => [
-        'syntax' => 'short',
-    ],
+    '@PER-CS' => true,
+    'single_line_empty_body' => false,
 ]);
 $config->setFinder($finder);
 

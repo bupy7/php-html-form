@@ -2,7 +2,7 @@ php-html-form
 ===
 
 This is fork of [adamwathan/form](https://github.com/adamwathan/form). There is just HTML-elements builder
-without any framework support. Extension are supporting PHP from 5.6 to 8.x!
+without any framework support. Extension are supporting PHP from 5.6 up to newest!
 
 
 [![Stable Version](https://poser.pugx.org/bupy7/php-html-form/v/stable)](https://packagist.org/packages/bupy7/php-html-form)
@@ -365,7 +365,7 @@ Code style
 To fix code style, run:
 
 ```
-~/.composer/vendor/bin/php-cs-fixer fix --config=./phpcs.php --verbose
+~/.composer/vendor/bin/php-cs-fixer fix --verbose
 ```
 
 You have to install [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) at first, if you

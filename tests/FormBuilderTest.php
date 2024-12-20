@@ -11,7 +11,7 @@ class FormBuilderTest extends TestCase
 
     protected function _setUp()
     {
-        $this->form = new FormBuilder;
+        $this->form = new FormBuilder();
     }
 
     protected function _tearDown()
@@ -21,7 +21,7 @@ class FormBuilderTest extends TestCase
 
     public function testFormBuilderCanBeCreated()
     {
-        $formBuilder = new FormBuilder;
+        $formBuilder = new FormBuilder();
         $this->assertInstanceOf('AdamWathan\Form\FormBuilder', $formBuilder);
     }
 
@@ -108,6 +108,7 @@ class FormBuilderTest extends TestCase
     /**
      * @dataProvider buttonProvider
      */
+    #[\PHPUnit\Framework\Attributes\DataProvider('buttonProvider')]
     public function testButton($value, $name, $expected)
     {
         $result = (string) $this->form->button($value, $name);

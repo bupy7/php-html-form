@@ -37,7 +37,7 @@ class FormBuilder
 
     public function open()
     {
-        $open = new FormOpen;
+        $open = new FormOpen();
 
         if ($this->hasToken()) {
             $open->token($this->csrfToken);

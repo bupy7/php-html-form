@@ -29,10 +29,10 @@ abstract class Element
     {
         if (is_array($attribute)) {
             foreach ($attribute as $key => $val) {
-                $this->setAttribute('data-'.$key, $val);
+                $this->setAttribute('data-' . $key, $val);
             }
         } else {
-            $this->setAttribute('data-'.$attribute, $value);
+            $this->setAttribute('data-' . $attribute, $value);
         }
 
         return $this;
@@ -137,7 +137,7 @@ abstract class Element
 
     protected function escape($value)
     {
-        return htmlentities((string)$value, ENT_QUOTES, 'UTF-8');
+        return htmlentities((string) $value, ENT_QUOTES, 'UTF-8');
     }
 
     public function __call($method, $params)

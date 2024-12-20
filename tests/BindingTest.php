@@ -11,7 +11,7 @@ class BindingTest extends TestCase
 
     protected function _setUp()
     {
-        $this->form = new FormBuilder;
+        $this->form = new FormBuilder();
     }
 
     protected function _tearDown()
@@ -128,7 +128,7 @@ class BindingTest extends TestCase
 
     public function testBindMagicProperty()
     {
-        $object = new MagicGetter;
+        $object = new MagicGetter();
         $this->form->bind($object);
 
         $expected = '<input type="text" name="not_magic" value="foo">';
@@ -167,8 +167,8 @@ class BindingTest extends TestCase
                 'city' => 'Roswell',
                 'tree' => [
                     'has' => [
-                        'nested' => 'Bird'
-                    ]
+                        'nested' => 'Bird',
+                    ],
                 ],
             ],
         ];
@@ -188,7 +188,7 @@ class BindingTest extends TestCase
         $array = [
             'address' => [
                 'tree' => [
-                    'nested' => 'Bird'
+                    'nested' => 'Bird',
                 ],
             ],
         ];
@@ -227,8 +227,8 @@ class BindingTest extends TestCase
                 'city' => 'Roswell',
                 'tree' => [
                     'has' => [
-                        'nested' => 'Bird'
-                    ]
+                        'nested' => 'Bird',
+                    ],
                 ],
             ],
         ]));
@@ -250,8 +250,8 @@ class BindingTest extends TestCase
                 'city' => 'Roswell',
                 'tree' => json_decode(json_encode([
                     'has' => [
-                        'nested' => 'Bird'
-                    ]
+                        'nested' => 'Bird',
+                    ],
                 ])),
             ],
         ];
@@ -407,7 +407,7 @@ class BindingTest extends TestCase
 
     private function getStubObject()
     {
-        $obj = new stdClass;
+        $obj = new stdClass();
 
         $obj->email = 'johndoe@example.com';
         $obj->first_name = 'John';
