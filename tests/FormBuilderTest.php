@@ -271,9 +271,18 @@ class FormBuilderTest extends TestCase
     {
         $this->form->setToken('12345');
         $refProp = new ReflectionProperty($this->form, 'csrfToken');
-        $refProp->setAccessible(true);
+
+        $canSetAccessible = version_compare(PHP_VERSION, '8.1.0') === -1;
+
+        if ($canSetAccessible) {
+            $refProp->setAccessible(true);
+        }
+
         $this->assertEquals('12345', $refProp->getValue($this->form));
-        $refProp->setAccessible(false);
+
+        if ($canSetAccessible) {
+            $refProp->setAccessible(false);
+        }
     }
 
     public function testCanRenderCsrfToken()
